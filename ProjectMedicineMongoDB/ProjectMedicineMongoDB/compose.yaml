@@ -1,0 +1,10 @@
+services:
+  mongodb:
+    image: 'mongo:latest'
+    container_name: 'mongodb_container'
+    environment:
+      - 'MONGO_INITDB_DATABASE=consultationsdb'
+      - 'MONGO_INITDB_ROOT_PASSWORD=rootpass'
+      - 'MONGO_INITDB_ROOT_USERNAME=rootuser'
+    ports:
+      - '27017:27017'

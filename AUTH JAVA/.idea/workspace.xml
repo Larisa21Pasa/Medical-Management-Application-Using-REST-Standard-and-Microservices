@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="456857c2-eb81-4919-b739-c0cfc2420fa4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/protoController/AuthenticationImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/protoController/AuthenticationImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/service/JWT/JWTServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/service/JWT/JWTServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/service/Logout/LogoutServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/AuthenticationComponent/service/Logout/LogoutServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Advices/GenericAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Advices/GenericAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Exceptions/TokenExpiredException.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Exceptions/TokenInvalidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Others/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Others/Logs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/no_sql/ConsultationsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/no_sql/ConsultationsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/sql/AppointmentsClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/sql/AppointmentsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/sql/AuthenticationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Clients/sql/AuthenticationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Controllers/GatewayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Controllers/GatewayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/GatewayComponent/Controllers/auth.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/SecurityConfigurationComponent/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/SecurityConfigurationComponent/JWTAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/Utils/Advices/GenericAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/Utils/Advices/GenericAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/Utils/Logs/INTREBARI.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/java/com/projectmedicine/gateway/gateway/Utils/Others/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GATEWAY/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GATEWAY/src/main/resources/todos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenApiConsultationsProject.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenApiPatientsProject.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-medicine-project/src/components/PatientHomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../react-medicine-project/src/components/PatientHomePage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZH7KujXif7gHyOtUcmyFqkLsrX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "proiect",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/adim/Desktop/FACULTATE/AN4/SEM1/POS/GITHUB PROIECT/activitate-proiect-laborator-2023-2024-LarisaPasaP/AUTH JAVA/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Advices",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Advices" />
+      <recent name="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Exceptions" />
+      <recent name="$PROJECT_DIR$/AuthenticationMedicine/src/main/java/com/projectmedicine/auth/Utils/Validators" />
+      <recent name="$PROJECT_DIR$/AuthenticationClient/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AuthenticationClient" />
+      <recent name="$PROJECT_DIR$/AuthenticationMedicine" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.projectmedicine.auth.Utils.Advices" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthenticationMedicineApplication">
+    <configuration name="All in AuthenticationMedicine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AuthenticationMedicine" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AuthenticationClient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authenticationclient.AuthenticationClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthenticationMedicineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="AuthenticationMedicine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.projectmedicine.auth.AuthenticationMedicineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in AuthenticationMedicine" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="456857c2-eb81-4919-b739-c0cfc2420fa4" name="Changes" comment="" />
+      <created>1702067090196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702067090196</updated>
+      <workItem from="1702067091682" duration="145565000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,69 @@
+use collectionsdb
+
+db.createCollection("consultations", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["idPatient", "idDoctor", "appointmentTime", "diagnostic", "investigations"],
+            properties: {
+                _id: {
+                    bsonType: "objectId"
+                },
+                idPatient: {
+                    bsonType: "string"
+                },
+                idDoctor: {
+                    bsonType: "int"
+                },
+                appointmentTime: {
+                    bsonType: "date"
+                },
+                diagnostic: {
+                    enum: ["sanatos", "bolnav"]
+                },
+                investigations: {
+                    bsonType: "array",
+                    items: {
+                        bsonType: "object",
+                        required: ["id", "naming", "processingHours", "result"],
+                        properties: {
+                            id: {
+                                bsonType: "objectId"
+                            },
+                            naming: {
+                                bsonType: "string"
+                            },
+                            processingHours: {
+                                bsonType: "int"
+                            },
+                            result: {
+                                bsonType: "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+
+db.consultations.insertOne({
+    idPatient: "1232321313222",
+    idDoctor: 2,
+    appointmentTime: ISODate("2023-11-22T12:00:00Z"),
+    diagnostic: "sanatos",
+    investigations: [
+        {
+            id: ObjectId(),
+            naming: "Analiza de sange",
+            processingHours: 3,
+            result: "Normal"
+        },
+        {
+            id: ObjectId(),
+            naming: "Radiografie",
+            processingHours: 2,
+            result: "Fara anomalii"
+        }
+    ]
+});

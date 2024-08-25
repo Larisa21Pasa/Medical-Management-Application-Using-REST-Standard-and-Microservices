@@ -1,0 +1,25 @@
+.logoPOS{
+  animation: logocss-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes logocss-spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.titleHeaderPOS{
+  font-size: 1.5em;
+}
+
+.HeaderPOS{
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: wheat;
+  text-align: center;
+}

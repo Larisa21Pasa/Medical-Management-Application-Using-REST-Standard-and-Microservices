@@ -1,0 +1,203 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option java_package = "com.projectmedicine.gateway.gateway.AuthenticationClient.protoComponents";
+
+
+
+message RegisterRequestProto {
+  string email = 1;
+  string password = 2;
+  string role = 3;
+}
+message RegisterResponseProto {
+  oneof response {
+    AccessTokenResponseProto success_response = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+
+message AuthenticationRequestProto {
+  string email = 1;
+  string password = 2;
+}
+message  AuthenticationResponseProto {
+  oneof response {
+    AccessTokenResponseProto success_response = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+message  LogoutResponseProto {
+  oneof response {
+    LogoutSuccessfulResponseProto success_response = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+
+message LogoutRequestProto {
+  string access_token = 1;
+}
+message LogoutSuccessfulResponseProto {
+  bool isLoggedOut = 1;
+}
+message AccessTokenResponseProto {
+  string access_token = 1;
+}
+message AccessTokenRequestProto {
+  string access_token = 1;
+}
+message  TokenValidityResponseProto {
+  oneof response {
+    isValidResponseProto success_response = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+message isValidResponseProto {
+  bool isValid = 1;
+}
+
+message ErrorResponseProto {
+  int32 error_code = 1;
+  string error_message = 2;
+}
+
+
+
+
+
+message UserBodyProto {
+  int32 user_id = 1;
+  string email = 2;
+  string hashed_password = 3;
+  RoleEnumProto role_enum = 4;
+  repeated TokenProto tokens = 8;
+
+}
+message TokenProto {
+  int32 id = 1;
+  string token = 2;
+  TokenTypeProto token_type = 3;
+  bool revoked = 4;
+  bool expired = 5;
+}
+enum TokenTypeProto {
+  BEARER = 0;
+}
+enum RoleEnumProto {
+  ADMIN = 0;
+  PATIENT = 1;
+  DOCTOR = 2;
+}
+
+message GetUserByIdRequestProto {
+  int32 user_id = 1;
+}
+message GetUserByEmailRequestProto {
+  string email = 1;
+}
+
+message UserResponseProto{
+  oneof response {
+    UserBodyProto userResponse = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+
+message DeleteUserRequestProto {
+  int32 user_id = 1;
+}
+
+message DeleteUserSuccessResponseProto {
+  bool successDeleted = 1;
+}
+message DeleteUserResponseProto {
+  oneof response {
+    DeleteUserSuccessResponseProto successDeleted = 1;
+    ErrorResponseProto error_response = 2;
+  }
+}
+
+
+service AuthenticationService {
+  rpc authenticate(AuthenticationRequestProto) returns (AuthenticationResponseProto);
+  rpc register(RegisterRequestProto) returns (RegisterResponseProto);
+  rpc logout(LogoutRequestProto) returns(LogoutResponseProto);
+  rpc isTokenValid(AccessTokenRequestProto) returns(TokenValidityResponseProto);
+  rpc isTokenValidByExpiredOrRevoked(AccessTokenRequestProto) returns(TokenValidityResponseProto);
+
+
+  rpc getUserById(GetUserByIdRequestProto) returns (UserResponseProto);
+  rpc getUserByEmail(GetUserByEmailRequestProto) returns (UserResponseProto);
+  rpc deleteUser(DeleteUserRequestProto) returns (DeleteUserResponseProto);
+}
+
+
+
+
+
+//
+//message RegisterRequestProto {
+//  string email = 1;
+//  string password = 2;
+//  string role = 3;
+//}
+//message RegisterResponseProto {
+//  oneof response {
+//    AccessTokenResponseProto success_response = 1;
+//    ErrorResponseProto error_response = 2;
+//  }
+//}
+//
+//message AuthenticationRequestProto {
+//  string email = 1;
+//  string password = 2;
+//}
+//message  AuthenticationResponseProto {
+//  oneof response {
+//    AccessTokenResponseProto success_response = 1;
+//    ErrorResponseProto error_response = 2;
+//  }
+//}
+//message  LogoutResponseProto {
+//  oneof response {
+//    LogoutSuccessfulResponseProto success_response = 1;
+//    ErrorResponseProto error_response = 2;
+//  }
+//}
+//
+//message LogoutRequestProto {
+//  string access_token = 1;
+//}
+//message LogoutSuccessfulResponseProto {
+//  bool isLoggedOut = 1;
+//}
+//message AccessTokenResponseProto {
+//  string access_token = 1;
+//}
+//message AccessTokenRequestProto {
+//  string access_token = 1;
+//}
+//message  TokenValidityResponseProto {
+//  oneof response {
+//    isValidResponseProto success_response = 1;
+//    ErrorResponseProto error_response = 2;
+//  }
+//}
+//message isValidResponseProto {
+//  bool isValid = 1;
+//}
+//
+//message ErrorResponseProto {
+//  int32 error_code = 1;
+//  string error_message = 2;
+//}
+//
+//
+//service AuthenticationService {
+//  rpc authenticate(AuthenticationRequestProto) returns (AuthenticationResponseProto);
+//  rpc register(RegisterRequestProto) returns (RegisterResponseProto);
+//  rpc logout(LogoutRequestProto) returns(LogoutResponseProto);
+//  rpc isTokenValid(AccessTokenRequestProto) returns(TokenValidityResponseProto);
+//}
+//
+//
